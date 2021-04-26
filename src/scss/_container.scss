@@ -4,3 +4,16 @@
   @include containerColors;
   @include containerShape;
 }
+
+.top_section {
+  @include topContainerPositions;
+}
+
+.top_section_inside {
+  text-align: center;
+  @include font;
+  font-size: 1.4em;
+  h3 {
+    margin: 0% 0% 0%;
+  }
+}
