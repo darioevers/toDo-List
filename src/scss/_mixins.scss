@@ -7,7 +7,7 @@
 
 // FONT MIXINS
 
-@mixin font {
+@mixin fontHeading {
   font-family: "Oxygen", sans-serif;
 }
 
@@ -34,6 +34,8 @@
 // INNER CONTAINER MIXINS
 
 @mixin topContainerPositions {
+  //   display: flex;
+  justify-content: center;
   align-items: center;
   margin: 0 auto;
   height: 20%;

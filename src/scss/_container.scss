@@ -10,10 +10,14 @@
 }
 
 .top_section_inside {
+  @include fontHeading;
   text-align: center;
-  @include font;
-  font-size: 1.4em;
+  justify-content: center;
+  font-size: 1.2em;
+  height: 100%;
+  border: rgb(228, 228, 228) 1px solid;
+  border-radius: 10px 10px 0px 0px;
   h3 {
-    margin: 0% 0% 0%;
+    margin-bottom: 0;
   }
 }
