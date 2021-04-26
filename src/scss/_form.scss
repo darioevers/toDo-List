@@ -1,0 +1,24 @@
+input {
+  width: 50%;
+  height: 25%;
+  border-color: none;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid rgb(179, 179, 179);
+  margin-right: -5px;
+}
+
+button {
+  height: 29%;
+  width: 14%;
+  background-color: rgb(253, 207, 0);
+  border: none;
+  color: white;
+  font-weight: 900;
+  font-size: 0.8em;
+  button:hover {
+    transform: scale(1.4);
+    transition-duration: 0.6s;
+  }
+}
