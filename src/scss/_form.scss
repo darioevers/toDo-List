@@ -1,5 +1,5 @@
 input {
-  width: 50%;
+  width: 70%;
   height: 25%;
   border-color: none;
   border-top: none;
@@ -21,4 +21,8 @@ button {
     transform: scale(1.4);
     transition-duration: 0.6s;
   }
+}
+
+.orange_font {
+  color: rgb(255, 179, 0);
 }
