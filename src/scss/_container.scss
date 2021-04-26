@@ -1,0 +1,6 @@
+.container {
+  @include containerSize;
+  @include containerPosition;
+  @include containerColors;
+  @include containerShape;
+}

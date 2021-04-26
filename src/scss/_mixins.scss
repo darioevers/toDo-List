@@ -1,0 +1,27 @@
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+// CONTAINER MIXINS
+
+@mixin containerSize {
+  height: 60vh;
+  width: 30vw;
+  border: red 1px solid;
+}
+
+@mixin containerPosition {
+  margin: 0 auto;
+  margin-top: 20vh;
+}
+
+@mixin containerColors {
+  background-color: gainsboro;
+}
+
+@mixin containerShape {
+  border-radius: 5px;
+}
