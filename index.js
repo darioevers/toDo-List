@@ -1,13 +1,3 @@
-const create = () => {
-  // 1. Step > Create elements to be added
-  const newElement = document.createElement("div");
-  const newText = document.createTextNode("This is a new text");
-  //   2. Step
-  //   DIV              NEW TEXT
-  newElement.appendChild(newText);
-  document.body.appendChild(newElement);
-};
-
 const addToList = () => {
   let userData = document.querySelector("#userData").value;
   if (userData != "") {
@@ -16,6 +6,23 @@ const addToList = () => {
     newLi.appendChild(text);
     document.querySelector(".result").appendChild(newLi);
     document.querySelector("#userData").value = "";
+    const newContainer = document.createElement("div");
+    const doneButton = document.createElement("button");
+    const deleteButton = document.createElement("button");
+    //
+    doneButton.innerHTML = "✓";
+    deleteButton.innerHTML = "✗";
+    //
+    newContainer.appendChild(doneButton);
+    newContainer.appendChild(deleteButton);
+    //
+    doneButton.classList.add("done");
+    newLi.appendChild(newContainer);
+    //
+    const check = () => newLi.classList.toggle("completed");
+    //
+    deleteButton.addEventListener("click", () => newLi.remove());
+    doneButton.addEventListener("click", check);
   } else {
     document.querySelector("#userData").placeholder = "Enter text first please";
   }
@@ -24,3 +31,11 @@ const addToList = () => {
 const removeFromList = () => {
   document.body.removeChild(newLi);
 };
+
+// Functional check which key the user is pressing
+const keyCheck = (event) => {
+  console.log(event);
+  if (e.key == "Enter") addToList();
+};
+
+document.querySelector("form").addEventListener("submit", addToList);
