@@ -39,10 +39,15 @@ input {
   width: 50%;
   height: 25%;
   border-color: none;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #b3b3b3;
+  margin-right: -5px;
 }
 
 button {
-  height: 28%;
+  height: 29%;
   width: 14%;
   background-color: #fdcf00;
   border: none;
