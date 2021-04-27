@@ -28,14 +28,10 @@ const addToList = () => {
   }
 };
 
-const removeFromList = () => {
-  document.body.removeChild(newLi);
-};
-
-// Functional check which key the user is pressing
-const keyCheck = (event) => {
-  console.log(event);
-  if (e.key == "Enter") addToList();
-};
-
-document.querySelector("form").addEventListener("submit", addToList);
+// PRESS ENTER KEY TO TRIGGER BUTTON
+document.getElementById("userData").addEventListener("keyup", function (event) {
+  event.preventDefault();
+  if (event.keyCode === 13) {
+    document.getElementById("userDataButton").click();
+  }
+});
