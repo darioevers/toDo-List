@@ -17,10 +17,10 @@ button {
   color: white;
   font-weight: 900;
   font-size: 0.8em;
-  button:hover {
-    transform: scale(1.4);
-    transition-duration: 0.6s;
-  }
+}
+
+button:focus {
+  outline: none;
 }
 
 .orange_font {
